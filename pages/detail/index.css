@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f8f9fa;
+}
+.nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+.main {
+    margin-top: 80px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 580px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.paragrab {
+    padding: 20px;
+}
+.paragrab h1 {
+    font-size: 2.8rem;
+}
+.paragrab p {
+    font-size: 1.6rem;
+}
+.contact p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.contact p i {
+    margin-right: 10px;
+}

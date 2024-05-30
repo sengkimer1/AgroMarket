@@ -1,0 +1,45 @@
+.box {
+    display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+  margin: auto;
+  width: 100%;
+  
+}
+
+.justify-content-center{
+  color: #1E870C;
+}
+h1{
+    margin-left: 15%
+}
+.opject {
+  width: 105%;
+  height: 500px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+.opject img {
+  width: 92%;
+  height: 60%;
+  object-fit: cover;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+.word {
+  margin-left: 10%;
+  margin-top: 7%;
+  line-height: 23px;
+  font-size: 18px;
+}
+.icon {
+  font-size: 12px;
+  margin-left: 55%;
+  margin-top: -7px;
+}
+.text-center{
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 50%;
+}
+
