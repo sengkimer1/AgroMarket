@@ -39,17 +39,18 @@ function renderProducts(categoryId, containerId) {
       data.forEach(product => {
         const attributes = product.attributes;
         const imageUrl = attributes.images?.data[0]?.attributes?.url || 'default-image-url.jpg';
-        const productLink = `../../pages/detail/index.html?productID=${product.id}&categoryID=${categoryId}`;
+        const productLink = `../../pages/detail/index.html?productID=${product.id}&categoryID=${categoryId || ''}`;
 
         cardContainer.innerHTML += `
+        <a href="${productLink}">
           <div class="card-container">
 
               <div class="row">
                 <div class="col-md-4">
                   <div class="card position-relative">
-                    <a href="${productLink}">
+                   
                       <img src="${imageUrl}" class="card-img-top" alt="${attributes.Name}">
-                    </a>
+                    
                     <div class="card-body">
                       <h5 class="card-title">${attributes.Name}</h5>
                       <p class="badge organic-badge" class="card-text">${attributes.Organic ? 'Organic' : ''}</p>
@@ -62,6 +63,7 @@ function renderProducts(categoryId, containerId) {
               </div>
             
           </div>
+          </a>
         `;
       });
     })
