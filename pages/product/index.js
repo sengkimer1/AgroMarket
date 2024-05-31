@@ -38,10 +38,11 @@ function createProductCard(product) {
   const productLink = `../../pages/detail/index.html?productID=${product.id}&categoryID=${categoryId || ''}`;
 
   return `
+  <a href="${productLink}" style="text-decoration: none;">
     <div class="opject">
-      <a href="${productLink}">
+     
         <img src="${imageUrl}" alt="${attributes.Name}">
-      </a>
+      
       <div class="word">
         <h5>${attributes.Name}</h5>   
         <p class="card-text">Quantity: ${attributes.Quantity}</p>
@@ -49,6 +50,7 @@ function createProductCard(product) {
         <p class="card-text">Province: ${attributes.OriginProvince}</p>
       </div>
     </div>
+    </a>
   `;
 }
 

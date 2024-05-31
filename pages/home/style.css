@@ -20,7 +20,11 @@
 }
 #text-text-1,#text-text-2,#text-text-3,#text-text-4{
   display: grid;
-  grid-template-columns: repeat(3,1fr); 
+  grid-template-columns: repeat(3,1fr);
+ 
+}
+a{
+  text-decoration: none;
 }
 .card-img-top {
   width: 90%;
@@ -34,6 +38,7 @@
 }
 .card-body {
   padding: 20px;
+  color: black;
 }
 
 .card-title {
