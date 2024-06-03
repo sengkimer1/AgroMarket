@@ -49,3 +49,81 @@ a{
 .opject{
   color: #000;
 }
+@media (max-width: 1200px) {
+  .box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    margin-left: 10%;
+  }
+
+  .opject {
+    height: 450px;
+  }
+
+  .word {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    margin-left: 5%;
+  }
+
+  .opject {
+    height: 550px;
+  }
+
+  .word {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .opject {
+    height: 550px;
+  }
+
+  .word {
+    font-size: 14px;
+    margin-left: 5%;
+  }
+
+  .icon {
+    margin-left: 50%;
+  }
+
+  .text-center {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .opject {
+    height: 550px;
+  }
+
+  .word {
+    font-size: 13px;
+    margin-left: 5%;
+  }
+
+  .icon {
+    margin-left: 45%;
+  }
+}
